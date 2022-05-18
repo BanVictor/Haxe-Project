@@ -106,8 +106,7 @@ class OptionsState extends FlxState
 	 * The user clicked the back button - close our save object, and go back to the MenuState
 	 */
 	function clickBack()
-	{
-		FlxG.save.close();
+	{rem
 		FlxG.camera.fade(FlxColor.BLACK, .33, false, function()
 		{
 			FlxG.switchState(new MenuState());
